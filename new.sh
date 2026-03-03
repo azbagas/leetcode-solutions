@@ -17,5 +17,7 @@ fi
 
 # Copy the template to the new file
 cp template.py "$name"
+# Create an empty excalidraw file
+touch "${name%.py}.excalidraw"
 
 echo -e "${GREEN}File created successfully at $name. \nHappy solving!${NC}"
