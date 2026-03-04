@@ -4,7 +4,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo -e "${GREEN}Enter the solution name (topic/00-problem-name.py):${NC}"
-read name
+read -e name
 
 # Extract the topic folder from the input
 topic_folder=$(dirname "$name")
